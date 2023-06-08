@@ -1,0 +1,142 @@
+<html>
+   <body>
+      <!-- Clearing the float on the right -->
+      <div style="clear: right">
+         <!-- Image aligned to the right -->
+         <img style="float: right;" alt="" src="https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ__400x400.png" width="200"/>
+      </div>
+      <!-- Clearing the float on the left -->
+      <div style="clear: left"></div>
+      <!-- Image aligned to the left -->
+      <img style="float: left;" alt="" src="https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ__400x400.png" width="200"/>
+      </div> 
+      <head>
+         <!-- Including the addBook.js script -->
+         <script src="addBook.js"></script>
+         <style>
+            /* CSS for centering elements */
+            .center {
+               margin-left: auto;
+               margin-right: auto;
+               width: 50%;
+               text-align: center;
+               padding: 5px;
+            }
+         </style>
+         <style>
+            /* CSS for floating buttons to the right */
+            .btn {
+               float: right;
+            }
+         </style>
+         <style>
+            /* CSS for the background gradient */
+            body {
+               background: linear-gradient(110deg, #e5eaf5 10%, #a0d2eb 100%, #d0bdf4 10%, #8458B3 20%, #a28089 20%);
+            }
+         </style>
+         
+   </head>
+   <body onload = "getExistingBooks()">
+   <div class="center">
+      <font size="8"> 
+      <label> Add a New Book</label></font>
+   </div>
+   <form>
+      <!-- Centered label and input for Book Number -->
+      <div class="center"> 
+         <label>Book Number:</label>
+         <input type="number" name="bookNumL">
+      </div>
+      <br> 
+      <!-- Centered label and input for Book Title -->
+      <div class="center"> 
+         <label> Book Title:</label>
+         <input type="Title" name="titleL">
+      </div>
+      <br>
+      <!-- Centered label and input for Author Name -->
+      <div class="center"> 
+         <label> Author name:</label>
+         <input type="Title" name="authorL">
+      </div>
+      <br>
+      <!-- Centered label and input for Genre of the Book -->
+      <div class="center"> 
+         <label> Genre of The book:</label>
+         <input type="Title" name="GenreL">
+         </div>
+      <br>
+      <!-- Centered label and input for Number of Pages -->
+      <div class="center"> 
+         <label> Number of pages:</label>
+         <input type="number" name="pagesC" >
+      </div>
+      <!-- Centered radio buttons for Book Type -->
+      <div class="center">
+         <font size="4">
+         <label> Booktype:</label> 
+         <input type="radio" name="bookTypeS" id="fiction" value="Fiction">
+         <label>Fiction</label>
+      </div>
+      <div class="center"> 
+         <input type="radio" name="bookTypeS" id="non-fiction" value="Non-Fiction">
+         <label>Non-Fiction</label>
+      </div>
+      <div class="center"> 
+         <input type="radio" name="bookTypeS" id="Graphic" value="Graphic">
+         <label>Graphic</label>
+      </div>
+      <br>
+      <!-- Centered label and select dropdown for Publication Date -->
+      <div class="center">
+         <font size="4">
+         <label for="subjects">Pub date:</label>
+         <select name="pubDateL" id="subjects">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="Before 2000">Before 2000</option>
+            <option value="2001-2005">2001-2005</option>
+            <option value="2006-2010">2006-2010</option>
+            <option value="2011-2015">2011-2015</option>
+            <option value="2016-2020">2016-2020</option>
+            <option value="2021-2023">2021-2023</option>
+            <option value="None of the Above">None of the Above</option>
+         </select>
+      </div>
+      <br><br>
+      <!-- Centered label and input for Date of Adding the book -->
+      <div class="center"> 
+         <label>Date of Adding the book:</label> 
+         <input type="date" id="BookFS" name="book">
+      </div>
+      <br> 
+      <!-- Centered label and input for Book Image -->
+      <div class="center"> 
+         <label for="img">Book Image:</label>
+         <input type="file" id="img" name="img" accept="image/*">
+      </div>
+      <br>
+      <!-- Button for adding a new book -->
+      <div class="btn">
+         <font size="8"></font></font>
+         <input type="button" onclick="addNewBook(this.form)" value="Add a new book"></input> 
+      </div>
+      <!-- Button for resetting the form -->
+      <div class="center">
+         <font size="8"></font></font>
+         <input type="reset" value="Reset">
+      </div>
+      <font size="8"></font>
+      
+
+
+
+
+      <align="right"> 
+      <!-- Button for going back to the Library Technician Page -->
+      <a href="Library Technician Page.html">
+      <input type="button" value="Back"></align> 
+      </a>
+   </form>
+</body>
+</html>

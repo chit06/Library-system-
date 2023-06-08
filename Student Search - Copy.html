@@ -1,0 +1,134 @@
+<!-- HTML code for a student book search form -->
+
+<html>
+   <body>
+      <!-- Clear the floating elements on the right -->
+      <div style="clear: right">
+         <!-- Image floated to the right -->
+         <img style="float: right;" alt="" src="https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ__400x400.png"  width ="200"/>
+      </div>
+      <!-- Clear the floating elements on the left -->
+      <div style="clear: left"></div>
+      <!-- Image floated to the left -->
+      <img style="float: left;" alt="" src="https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ__400x400.png"  width ="200"/>
+      </div> 
+      <head>
+         <!-- Include the external JavaScript file -->
+         <script src="studentsearch.js"></script>
+         <style>
+            /* Center-align elements */
+            .center {
+               margin-left: auto;
+               margin-right: auto;
+               width: 50%;
+               text-align: center;
+               padding: 5px;
+            }
+         </style>
+         <style>
+            /* Float elements to the right */
+            .btn {
+               float: right;
+            }
+         </style>
+         <style>
+            /* Set background color with a linear gradient */
+            body {
+               background: linear-gradient(110deg, #e5eaf5 10%, #a0d2eb 100%, #d0bdf4 10%, #8458B3 10%, #a28089 20%);
+            }
+         </style>
+      </head>
+      <div class="center">
+         <font size="8">Student Search</font>
+      </div>
+      <form>
+         <!-- Input field for Book Number -->
+         <div class="center">
+            <label>Book Number:</label>
+            <input type="number" name="bookNumS">
+         </div>
+         <br> 
+         <!-- Input field for Book Title -->
+         <div class="center">
+            <label>Book Title:</label>
+            <input type="Title" name="bookTitleY">
+         </div>
+         <br>
+         <!-- Input field for Author Name -->
+         <div class="center">
+            <label>Author Name:</label>
+            <input type="Title" name="authorL">
+         </div>
+         <div class="center">
+            <font size="5"></font>
+            <br>
+            <label>Book Type:</label>
+            <!-- Checkbox for Fiction book type -->
+            <input type="checkbox" name="bookTypeFS" id="fiction" value="fiction">
+            <label>Fiction</label>
+         </div>
+         <br>
+         <div class="center">
+            <!-- Checkbox for Non-Fiction book type -->
+            <input type="checkbox" name="bookTypeNFS" id="non-fiction" value="Non-fiction">
+            <label>Non-Fiction</label>
+         </div>
+         <br>
+         <div class="center">
+            <!-- Checkbox for Graphic book type -->
+            <input type="checkbox" name="bookTypeGNS" id="Graphic" value="Graphic">
+            <label>Graphic</label>
+         </div>
+         <font size="4"></font>
+         <br>
+         <div class="center">
+            <label for="subjects">Publication Date:</label>
+            <!-- Dropdown for selecting the publication date -->
+            <select name="pubDateL" id="subjects">
+               <option value="none" selected disabled hidden>Select an Option</option>
+               <option value="Before 2000">Before 2000</option>
+               <option value="2001-2005">2001-2005</option>
+               <option value="2006-2010">2006-2010</option>
+               <option value="2011-2015">2011-2015</option>
+               <option value="2016-2020">2016-2020</option>
+               <option value="2021-2023">2021-2023</option>
+               <option value="None of the Above">None of the Above</option>
+            </select>
+         </div>
+         <br><br>
+         <div class="center">
+            <label>Number of Pages:</label>
+            <!-- Input field for Number of Pages -->
+            <input type="text" name="PNumber">
+         </div>
+         <br>
+         <div class="center">
+            <label>Genre of the Book:</label>
+            <!-- Input field for Genre of the Book -->
+            <input type="text" name="genreC">
+         </div>
+         <br>
+         <div class="btn">
+            <font size="8"></font>
+            <!-- Link to the search results page -->
+            <a href="Search Results page.html">
+               <!-- Button to initiate the search -->
+               <input type="button" value="Search" onclick="getStudentSearchData(this.form)">
+            </a>
+         </div>
+         <div class="center">
+            <font size="8"></font>
+            <!-- Reset button for the form -->
+            <input type="reset" value="Reset">
+         </div>
+         <font size="8"></font> 
+         <align="right">
+            <!-- Button for going back -->
+            <input type="button" value="Back">
+         </align> 
+      </form>
+      </align>
+      <body bgcolor="LightGrey">
+      </body>
+   </body>
+</html>
